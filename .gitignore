@@ -1,0 +1,50 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+supabase/.env
+supabase/.temp/
+supabase/.branches/
+
+# Real health data must never be committed
+*.real.pdf
+private_data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Vite
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Legacy Flutter tree (kept for reference during the port)
+.dart_tool/
+.packages
+build/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+app/dart_defines.json
+app/android/local.properties
+app/android/.gradle/
+app/ios/Pods/
+app/windows/flutter/ephemeral/
+app/linux/flutter/ephemeral/
+app/macos/Flutter/ephemeral/
+*.iml
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
